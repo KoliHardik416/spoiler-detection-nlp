@@ -17,6 +17,9 @@ MOVIES_PATH = os.path.join(DATA_DIR, "IMDB_movie_details.json")
 # Create output directories
 os.makedirs(RESULTS_DIR, exist_ok=True)
 os.makedirs(MODELS_DIR, exist_ok=True)
+os.makedirs(os.path.join(RESULTS_DIR, "model_results"), exist_ok=True)
+os.makedirs(os.path.join(RESULTS_DIR, "model_charts"), exist_ok=True)
+os.makedirs(os.path.join(RESULTS_DIR, "evaluation_charts"), exist_ok=True)
 
 # ─── Sampling & Splits ──────────────────────────────────────────────────────
 RANDOM_SEED = 42

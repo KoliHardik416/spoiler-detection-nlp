@@ -21,3 +21,8 @@ __pycache__/
 
 # Log files
 *.log
+
+# Large binary files
+*.pkl
+*.joblib
+results/preprocessed_data.pkl

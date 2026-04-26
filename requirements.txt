@@ -1,0 +1,17 @@
+pandas
+numpy
+scikit-learn
+matplotlib
+seaborn
+nltk
+wordcloud
+transformers
+torch
+tqdm
+jupyter
+ipykernel
+peft
+bitsandbytes
+torch 
+torchvision 
+torchaudio

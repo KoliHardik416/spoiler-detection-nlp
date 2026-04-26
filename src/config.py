@@ -20,23 +20,12 @@ os.makedirs(MODELS_DIR, exist_ok=True)
 
 # ─── Sampling & Splits ──────────────────────────────────────────────────────
 RANDOM_SEED = 42
-BASELINE_SAMPLE_SIZE = 200_000       
-BERT_SAMPLE_SIZE = 100_000        
 TEST_SIZE = 0.20                    
 VAL_SIZE = 0.10                     
 
 # ─── TF-IDF ─────────────────────────────────────────────────────────────────
 TFIDF_MAX_FEATURES = 50_000
 TFIDF_NGRAM_RANGE = (1, 2)
-
-# ─── DistilBERT ─────────────────────────────────────────────────────────────
-BERT_MODEL_NAME = "distilbert-base-uncased"
-BERT_MAX_LENGTH = 512
-BERT_BATCH_SIZE = 32
-BERT_LEARNING_RATE = 2e-5
-BERT_EPOCHS = 3
-BERT_WARMUP_STEPS = 500
-BERT_WEIGHT_DECAY = 0.01
 
 # ─── Label mapping ──────────────────────────────────────────────────────────
 LABEL_MAP = {False: 0, True: 1}

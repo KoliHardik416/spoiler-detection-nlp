@@ -1,0 +1,39 @@
+{
+  "model_name": "distilbert",
+  "metrics": {
+    "accuracy": 0.7754,
+    "precision": 0.6379992803166606,
+    "recall": 0.33713633770678836,
+    "f1": 0.4411545160487684,
+    "roc_auc": 0.7735467558955049
+  },
+  "details": {
+    "model_name": "distilbert-base-uncased",
+    "max_length": 512,
+    "batch_size": 32,
+    "learning_rate": 2e-05,
+    "epochs": 3,
+    "warmup_steps": 500,
+    "weight_decay": 0.01,
+    "sample_size": 100000,
+    "training_time_seconds": 3568.36,
+    "best_val_f1": 0.42744323790720634,
+    "training_history": {
+      "train_loss": [
+        0.5202395396760002,
+        0.4865507262076168,
+        0.47989638902968856
+      ],
+      "val_loss": [
+        0.49896093307973477,
+        0.4858257025004195,
+        0.48304834133519914
+      ],
+      "val_f1": [
+        0.3477043673012318,
+        0.42744323790720634,
+        0.39819004524886875
+      ]
+    }
+  }
+}

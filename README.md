@@ -28,6 +28,32 @@ Online movie reviews are a primary resource for audiences deciding whether to wa
 
 TF-IDF = Term Frequency-Inverse Document Frequency. It is a numerical statistic that is intended to reflect how important a word is to a document in a collection or corpus.
 
+## Project Structure
+
+```
+├── Data/
+│   ├── IMDB_movie_details.json       # Movie metadata (1,572 movies)
+│   └── IMDB_reviews.json             # Reviews with spoiler labels (573K)
+├── notebooks/
+│   ├── 01_EDA.ipynb                  # Data Analysis
+│   ├── 02_Preprocessing.ipynb        # Text cleaning and TF-IDF
+│   ├── 03_Baseline_Models.ipynb      # Majority, NB, Logistic Regression
+│   ├── 04_BERT_Model.ipynb           # DistilBERT fine-tuning
+│   └── 05_Evaluation_Analysis.ipynb  # Comparison and error analysis
+├── src/
+│   ├── config.py                     # Hyperparameters and paths
+│   ├── data_loader.py                # Data loading and splitting
+│   ├── preprocessing.py              # Text cleaning and TF-IDF
+│   └── evaluation.py                 # Metrics, plots, JSON export
+├── models/                           # Saved model checkpoints (.joblib, .pt)
+├── results/                          # All generated outputs
+│   ├── DA/                           # Data Analysis plots (Notebook 01)
+│   ├── model_results/                # JSON metric files per model
+│   ├── model_charts/                 # ROC and Confusion Matrix plots
+│   └── evaluation_charts/            # Final model comparison charts
+└── requirements.txt
+```
+
 ## Setup
 
 ```bash
@@ -48,6 +74,8 @@ python download_nltk_resources.py
 cd notebooks
 jupyter notebook
 ```
+
+**Run the notebooks sequentially** (1 → 5). Notebooks 3–4 depend on the preprocessed data saved by Notebook 2.
 
 ## Results
 

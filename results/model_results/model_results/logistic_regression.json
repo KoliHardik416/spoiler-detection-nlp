@@ -1,0 +1,17 @@
+{
+  "model_name": "logistic_regression",
+  "metrics": {
+    "accuracy": 0.72175,
+    "precision": 0.4778959554301425,
+    "recall": 0.6279113984219032,
+    "f1": 0.5427280197206245,
+    "roc_auc": 0.7641359282742956
+  },
+  "details": {
+    "C": 1.0,
+    "solver": "saga",
+    "class_weight": "balanced",
+    "training_time_seconds": 10.1,
+    "val_f1": 0.539340732151731
+  }
+}

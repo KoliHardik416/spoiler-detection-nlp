@@ -1,0 +1,13 @@
+{
+  "model_name": "majority_class",
+  "metrics": {
+    "accuracy": 0.737025,
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1": 0.0
+  },
+  "details": {
+    "strategy": "most_frequent",
+    "description": "Always predicts the majority class (non-spoiler)"
+  }
+}
